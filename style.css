@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+}
+/* common styling---------------------- */
+html{
+    scroll-behavior: smooth; 
+  }
+  .player ,.schedule ,.ticket ,.venue, .contact{
+    font-family: 'poppins' san serif;
+    margin-top:30px;
+}
+.contact .title{
+    position:relative;
+    text-align:center;
+    font-size:70px;
+    font-weight: 500;
+    margin-bottom:60px;
+    padding-bottom:20px;
+    font-family: 'Ubuntu', sans-serif; 
+    text-decoration: #111;
+}   
+
+.contact .title .title_btm {
+    font-size:30px;
+    color:#17594A;
+   
+    
+ }
+
+ hr{
+    
+    border-style: dotted none none none;
+
+    height: 0px;
+    width:7%;
+    border-color: grey;
+    border-width: 5px;
+    
+    
+  
+    
+}
+  /* navbar styling-------------------- */
+.navbar{
+    position:fixed;
+    width:100%;
+    padding: 10px 0;
+  
+    background: #052655;
+   z-index:999;
+    font-family: 'Ubuntu' , san-serif;
+    transition: all 0.3s ease;
+}
+
+ .navbar.sticky{     /*.sticky */
+    padding: 5px 0;
+
+}
+
+.navbar .logo a{
+    color:#fff;
+font-size:40px;
+font-weight:600;
+}
+
+.navbar .menu li{
+    list-style:none;
+    display:inline-block;
+}
+.navbar .menu li a{
+color:#E1ECC8;
+font-size:25px;
+font-weight:500;
+padding: 0.4rem;
+margin-left:25px;
+transition: color 0.3s ease;    /* diff */
+}
+.navbar .menu li a:hover{
+    color:#F7D060;
+}
+.navbar .max-width{
+    display:flex;
+  
+   align-items: center;
+   justify-content:space-between;
+
+}
+.navbar.sticky .menu li a:hover{
+color:white;
+}
+
+
+
+.port{
+    border-radius: 200%;
+    float:left;
+    width:100px;
+    height:100px;
+}
+
+.max-width  {
+    max-width:100%;
+    padding: 0px 80px;
+    margin:auto;
+}
+
+/* menu button styling---------------- */
+
+.menu-btn{
+    color: #fff;
+    font-size:20px;
+    cursor:pointer;
+    display:none;
+    
+    }
+    
+
+
+
+.logo p{
+    color:#fff;
+    align-self:center;
+    font-size:50px;
+    font-weight:600;
+    
+}
+
+/* home section */
+
+.home{
+    display:flex;
+  
+    background: url("bg.png") no-repeat center;
+    justify-content:center;
+    align-items: center;
+   
+    height:100vh;
+    color:#fff;
+    min-height:500px;
+    font-family: 'Ubuntu' , san-serif;
+   background-size: cover;
+ 
+}
+
+
+
+.home .max-width{
+    display:flex;
+
+justify-content:center;
+align-items: center;
+background-color: #222;
+opacity: 0.7;
+
+width:100%;
+height: 70px;
+}
+.home .max-width .home-content{
+    padding: 50px 20px 0px 20px;
+   
+}
+.home .home-content {
+    font-size:50px;
+    font-weight:400;
+
+    
+}
+.home .home-content .text-2{
+    font-size:60px;
+    font-weight:600;
+    margin-left: -3px;
+ 
+}
+.home .home-content .text-3{
+    font-size:40px;
+    margin: 5px 0;
+    
+}
+
+.home .home-content .text-3 span{
+    color: #F3E99F;
+    font-weight:600;
+}
+
+
+
+
+
+    /* Contact Me section styling--------------------------- */
+
+
+.contact .contact-content {
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    margin: 35px 0 20px 0 !important;
+    /* background:#222; */
+    
+  }
+
+.contact .contact-content p{
+    font-family: 'Ubuntu', sans-serif; 
+    font-size:29px;
+    color:crimson;
+
+}
+  input[type=submit] {
+    width: 100%;
+    background-color: #052655;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:1.1rem;
+  }
+  input[type=submit]:hover {
+background:#4d5357;
+  }
+
+  input[type=text], select {
+    width: 100%;
+    background:#cadff4;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size:30px;
+  }
+  input[type=email], select {
+    width: 100%;
+    background:#cadff4;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size:30px;
+  }
+  textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size:30px;
+  }
+
+
+    /* footer section styling -------------- */
+
+  .footerz p{
+    color:#E1ECC8;
+    text-align: center;
+    background: #052655;
+    font-size:20px;
+    padding-bottom:4px;
+    font-family:poppins;
+  }
+  .foot{
+   background-color:#052655;
+    display:flex;
+    height:80px;
+    gap: 30px;
+    justify-content:center;
+    align-items:center;
+  }
+  .foot i{
+    color: #E1ECC8;
+    font-size:35px;
+  }
+  .foot i:hover{
+    color: #F7D060;
+    font-size:30px;
+  }
+
+    /* resonsive------------------ */
+
+    
+    @media(max-width:2000px){
+        .home .max-width{
+            margin-left:0px;
+            margin-right:0px;
+         
+    }
+
+
+    }
+
+    @media(max-width:1200px){
+        .home .max-width{
+            margin-left:0px;
+         
+    }
+
+
+    }
+    @media(max-width: 947px){
+        .max-width{
+            padding:0 50px;}
+        
+
+          .menu-btn{
+            display:block;
+            z-index:999;
+            }
+            .menu-btn i.active:before{
+             content:"\f00d";
+            }
+        .navbar .menu{
+            position: fixed;
+            height:100vh;
+            width:100%;
+            background:#111;
+           left:-100%;
+           top:0;
+           text-align:center;
+           padding:100px;
+           transition: all 0.3s ease;
+        }
+        .navbar .menu.active{               /*.active*/
+     left:0;
+        }
+        .navbar .menu li{
+            display:block;
+        }
+        .navbar .menu li a{
+            display:inline-block;
+            margin:20px 0;
+            font-size:25px;
+        }
+  
+
+        }
+        @media(max-width: 950px){
+            .max-width{
+                padding: 0 23px;
+            }
+
+          }
+        @media(max-width: 800px){
+            .max-width{
+                padding: 0 23px;
+            }
+
+          }
+  
+  @media(max-width: 690px){
+    .max-width{
+        padding: 0 23px;
+    }
+
+    .player .title .title_btm,.ticket .title .title_btm,.contact .title .title_btm {
+        font-size:26px;
+        color:#17594A;
+       
+        
+     }
+
+        .footerz .bot{
+            font-size:15px;
+
+        }
+  }
+
+  @media(max-width: 500px){
+    .max-width{
+        padding: 0 23px;
+    }
+
+
+    .logo p{
+        color:#fff;
+        align-self:center;
+        font-size:30px;
+        font-weight:450;
+        
+    }
+
+  }
+
+  @media(max-width: 400px){
+    .max-width{
+        padding: 0 23px;
+    }
+
+
+    .logo{
+   
+        display:flex;
+        gap:5px;
+    }
+    .port{
+        border-radius: 200%;
+        float:left;
+        width:40px;
+        height:40px;
+    }
+    .logo p{
+        color:#fff;
+        align-self:center;
+        font-size:25px;
+        font-weight:400;
+        
+    }
+
+
+  }
+
+
+
+
+
+    
+
+
+
+
